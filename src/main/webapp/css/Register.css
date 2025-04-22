@@ -1,0 +1,163 @@
+/* Page styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #2b2b2b;
+    color: #000;
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* Register box container */
+.container-box {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Registration form header */
+.title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Form Styling */
+.box-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* increased for better spacing */
+}
+
+.box-form h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Input container styling */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* For two-column fields */
+.name-group,
+.flex-row {
+    display: flex;
+    gap: 10px;
+}
+
+.first-name-group,
+.last-name-group,
+.gender-group,
+.dob-group,
+.password-group,
+.confirm-password-group {
+    flex: 1;
+}
+
+.gender-group {
+    color: #000;
+}
+
+label {
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    display: block;
+}
+
+input,
+select {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    background-color: #d3d3d3;
+    color: black;
+    width: 100%; /* aligns all input widths */
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0 0 6px #ffffff;
+}
+
+/* Phone number styling */
+.phone-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.phone-wrapper select {
+    width: 90px;
+    min-width: 70px;
+}
+
+.phone-wrapper input {
+    flex: 1;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+
+.checkbox-group input {
+    margin-right: 6px;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #A70000;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* aligns button with form fields */
+}
+
+.btn:hover {
+    background-color: #670A0A;
+}
+
+/* Text link styling */
+.text-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.text-link a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.text-link a:hover {
+    text-decoration: underline;
+    color: #ff0000;
+}

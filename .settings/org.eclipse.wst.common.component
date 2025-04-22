@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+        
+    <wb-module deploy-name="Reelgood">
+                
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <dependent-module archiveName="mysql-connector-j-9.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/E:/4th Semester/Advanced Programming and Technologies/Week 8 - Introduction to JSTL/Tutorial/Java Jar Files/mysql-connector-j-9.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+                
+        <property name="context-root" value="Reelgood"/>
+                
+        <property name="java-output-path" value="/Reelgood/build/classes"/>
+            
+    </wb-module>
+    
+</project-modules>

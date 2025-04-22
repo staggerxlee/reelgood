@@ -1,0 +1,95 @@
+/* General background of Log In page */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #2b2b2b; /* Grey background */
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for log in box */
+.container-box {
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    padding: 40px 30px;
+    margin-right: 12px;
+    box-shadow:0 0 25px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Log In header */
+.box-form h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Styling input */
+.group-input {
+    margin-bottom: 20px;
+}
+
+.group-input label {
+    margin-bottom: 6px;
+    display: block;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.group-input input{
+    background-color: #d3d3d3;
+    color: black;
+    width: 94%;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+.group-input input:focus {
+    box-shadow: 0 0 6px #ffffff;
+    outline: none;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #A70000;
+    color: #ffffff;
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #670A0A;
+}
+
+/* Text Links */
+.text-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  .text-link a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .text-link a:hover {
+    text-decoration: underline;
+    color: #ff0000;
+  }
+  
