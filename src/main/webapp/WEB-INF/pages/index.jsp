@@ -13,13 +13,12 @@
     <div class="container">
         <header>
             <div class="header-content">
-                <div>
-                    <h1>CINEMANDU</h1>
-                    <p class="text-muted">Book your favorite movies with ease</p>
+                <div style=" width:100%; text-align: center;">
+                    <img src="${pageContext.request.contextPath}/images/ReelGood.png" style='height:200px; width:200px;'>
                 </div>
-                <div class="header-buttons">
-                    <button class="btn btn-primary" onclick="location.href='${pageContext.request.contextPath}/login">Sign In / Register</button>
-                </div>
+                
+                    <button class="btn btn-primary" onclick="location.href='${pageContext.request.contextPath}/login.jsp">Sign In / Register</button>
+               
             </div>
         </header>
 
@@ -61,7 +60,7 @@
         </div>
     </template>
 
-    <script src="${pageContext.request.contextPath}../../js/main.js"></script>
+    <script src="${pageContext.request.contextPath}/js/main.js"></script>
     <script>
         // Initialize Feather icons after page load
         document.addEventListener('DOMContentLoaded', function() {

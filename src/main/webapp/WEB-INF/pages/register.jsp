@@ -1,67 +1,70 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Register</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/Register.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReelGood - Create Account</title>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/register.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 </head>
 <body>
-    <div class="container-box">
-        <form class="box-form" action="${pageContext.request.contextPath}/register" method="post">
-            <h2>Register</h2>
-            
-            <% if(request.getAttribute("error") != null) { %>
-                <div class="error-message"><%= request.getAttribute("error") %></div>
-            <% } %>
-            
-            <div class="input-group full">
-                <label for="username">Username *</label>
-                <input type="text" id="username" name="username" value="<%= request.getAttribute("username") != null ? request.getAttribute("username") : "" %>" required />
-            </div>
-            
-            <div class="input-group full">
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" value="<%= request.getAttribute("email") != null ? request.getAttribute("email") : "" %>" required />
-            </div>
-            
-            <div class="input-group full">
-                <label for="password">Password *</label>
-                <input type="password" id="password" name="password" required />
-            </div>
-            
-            <div class="input-group full">
-                <label for="confirmPassword">Confirm Password *</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required />
-            </div>
-            
-            <div class="input-group full">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" value="<%= request.getAttribute("phone") != null ? request.getAttribute("phone") : "" %>" />
-            </div>
-            
-            <div class="input-group full">
-                <label for="address">Address</label>
-                <textarea id="address" name="address"><%= request.getAttribute("address") != null ? request.getAttribute("address") : "" %></textarea>
-            </div>
-            
-            <div class="input-group full">
-                <label for="gender">Gender</label>
-                <select id="gender" name="gender">
-                    <option value="">Select Gender</option>
-                    <option value="male" <%= "male".equals(request.getAttribute("gender")) ? "selected" : "" %>>Male</option>
-                    <option value="female" <%= "female".equals(request.getAttribute("gender")) ? "selected" : "" %>>Female</option>
-                    <option value="other" <%= "other".equals(request.getAttribute("gender")) ? "selected" : "" %>>Other</option>
-                </select>
-            </div>
-            
-            <input type="hidden" name="role" value="user" />
-            
-            <button type="submit" class="btn">Register</button>
-            
-            <p class="text-link">Already have an account? <a href="${pageContext.request.contextPath}/login">Login</a></p>
-        </form>
+  <div class="container">
+    <div class="login-page">
+      <div class="login-container">
+        <div class="login-form-container"> 
+          <div class="login-form-section active" id="signup-section">
+            <h2>Create Account</h2>
+            <form id="signup-form">
+              <div class="login-form-group">
+                <label for="signup-name">Full Name</label>
+                <div class="login-input-group">
+                  <i class="fa-solid fa-user login-icon"></i>
+                  <input type="text" id="signup-name" placeholder="Enter your full name">
+                  <span class="login-error-message"></span>
+                </div>
+              </div>
+              
+              <div class="login-form-group">
+                <label for="signup-email">Email</label>
+                <div class="login-input-group">
+                  <i class="fa-solid fa-envelope login-icon"></i>
+                  <input type="email" id="signup-email" placeholder="Enter your email">
+                  <span class="login-error-message"></span>
+                </div>
+              </div>
+              
+              <div class="login-form-group">
+                <label for="signup-password">Password</label>
+                <div class="login-input-group">
+                  <i class="fa-solid fa-lock login-icon"></i>
+                  <input type="password" id="signup-password" placeholder="Create a password">
+                  <i class="fa-solid fa-eye login-toggle-password"></i>
+                  <span class="login-error-message"></span>
+                </div>
+              </div>
+              
+              <div class="login-terms">
+                <input type="checkbox" id="terms">
+                <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+              </div>
+              
+              <button type="submit" class="login-submit-btn">
+                <span>Create Account</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+          
+          <div class="login-form-footer">
+            <p id="login-footer-text">Already have an account? <a href="login.html">Login</a></p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+
 </body>
 </html>

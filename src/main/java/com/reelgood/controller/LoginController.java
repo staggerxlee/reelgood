@@ -28,7 +28,7 @@ public class LoginController extends HttpServlet {
         if (session != null && session.getAttribute("user") != null) {
             String role = (String) session.getAttribute("role");
             if ("admin".equals(role)) {
-                request.getRequestDispatcher("/WEB-INF/pages/admin/dashboard.jsp").forward(request, response);
+                request.getRequestDispatcher("/WEB-INF/pages/admin/admin-dashboard.jsp").forward(request, response);
             } else {
                 request.getRequestDispatcher("/WEB-INF/pages/index.jsp").forward(request, response);
             }
@@ -65,7 +65,7 @@ public class LoginController extends HttpServlet {
 
                     // Forward to appropriate page based on role
                     if ("admin".equals(user.getRole())) {
-                        request.getRequestDispatcher("/WEB-INF/pages/admin/dashboard.jsp").forward(request, response);
+                        request.getRequestDispatcher("/WEB-INF/pages/admin/admin-dashboard.jsp").forward(request, response);
                     } else {
                         request.getRequestDispatcher("/WEB-INF/pages/index.jsp").forward(request, response);
                     }
